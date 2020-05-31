@@ -1,0 +1,35 @@
+
+INFO: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=13371310}
+May 31, 2020 6:43:55 PM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Opened connection [connectionId{localValue:2, serverValue:46}] to localhost:27017
+-----------------------------------------------------------------------
+-----------------------READ Query----------------------------------------
+Checking the show whose runtime is less than 60 but greater than 30 and premeired on "2015-06-24" : 
+.................Database read request sent......Loading...............loading.............loading........ 
+Document{{_id=5ecd87b40847664b8dfc47c8, id=1871, url=http://www.tvmaze.com/shows/1871/mr-robot, name=Mr. Robot, type=Scripted, language=English, genres=[Drama, Crime, Thriller], status=Ended, runtime=60, premiered=2015-06-24, officialSite=http://www.usanetwork.com/mrrobot, schedule=Document{{time=22:00, days=[Sunday]}}, rating=Document{{average=8.4}}, weight=98, network=Document{{id=30, name=USA Network, country=Document{{name=United States, code=US, timezone=America/New_York}}}}, episodes=[Document{{id=157154}}, Document{{id=167379}}, Document{{id=167380}}, Document{{id=167381}}, Document{{id=167382}}, Document{{id=167383}}, Document{{id=167384}}, Document{{id=167385}}, Document{{id=167386}}, Document{{id=167387}}, Document{{id=733139}}, Document{{id=830870}}, Document{{id=830871}}, Document{{id=830872}}, Document{{id=830873}}, Document{{id=830874}}, Document{{id=830875}}, Document{{id=830876}}, Document{{id=830877}}, Document{{id=830878}}]}}
+-------------------------------------------------------------------------
+ 
+-----------------------UPDATE Query----------------------------------------
+UPDATING NAME OF EPISODES with name eps1.0_hellofriend.mov to Black Window: 
+.................Database update request sent......Loading...............loading.............loading........ 
+Document{{_id=5ed26d775952d55ed3a5965c, id=157154, showname=Mr. Robot, url=http://www.tvmaze.com/episodes/157154/mr-robot-1x01-eps10hellofriendmov, name=Black Widow, season=1, number=1, airdate=2015-06-24, airtime=22:00, airstamp=2015-06-25T02:00:00+00:00, runtime=60, image=Document{{medium=http://static.tvmaze.com/uploads/images/medium_landscape/106/266370.jpg, original=http://static.tvmaze.com/uploads/images/original_untouched/106/266370.jpg}}, summary=<p>In MR. ROBOT, Elliot, a cyber-security engineer by day and vigilante hacker by night, is recruited by a mysterious underground group to destroy the firm he's paid to protect. Elliot must decide how far he'll go to expose the forces he believes are running (and ruining) the world.</p>, _links=Document{{self=Document{{href=http://api.tvmaze.com/episodes/157154}}}}}}
+-------------------------------------------------------------------------
+ 
+-----------------------CREATE Query----------------------------------------
+Creating two new Episodes for the Better Call Saul Show: 
+.................Database create request sent......Loading...............loading.............loading........ 
+Document{{_id=5ed3d9a946be0f51696bca02, id=1000000, showname=Better Call Saul, url=http://www.tvmaze.com/episodes/109599/better-call-saul, season=1, number=12, airdate=2015-04-23, runtime=60}}
+
+-------------------------------------------------------------------------
+ 
+-----------------------DELETE Query----------------------------------------
+Deleting two new Episodes for the Better Call Saul Show: 
+.................Database delete request sent......Loading...............loading.............loading........ 
+The Numbers of Deleted Document(s) : 1
+Confirming documents have been deleted by making a read query: 
+Shows Documents found with Name Narcos are :0
+done
+Done
+
+Process finished with exit code 0
+
